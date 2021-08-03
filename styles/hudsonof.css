@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #FFFFFF;
+    font-family: Helvetica, sans-serif;
+    min-height: 100vh;
+    background: url(../images/mac-bg.jpg) no-repeat center/cover;
+    overflow: hidden;
+}
+
+.safari {
+    width: 80%;
+    height: 80%;
+    background: #38393A;
+    border-radius: 0.8em;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    z-index: 9;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(7, 7, 7, 1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(7, 7, 7, 1);
+    box-shadow: 0px 0px 10px 0px rgba(7, 7, 7, 1);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/background.jpg) no-repeat center/cover;
+}
+
+.toolbar {
+    width: 100%;
+    height: 50px;
+    padding: 0 25px;
+    background: #191C1F;
+    border-top-left-radius: 0.8em;
+    border-top-right-radius: 0.8em;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: grab;
+}
+
+.toolbar:active {
+    cursor: grabbing;
+}
+
+.toolbar .controls {
+    display: flex;
+    align-items: center;
+}
+
+.toolbar .controls a {
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.toolbar .close {
+    background: #EE6A5F;
+    border: 1px solid #CE5347;
+}
+
+.toolbar .minimize {
+    background: #F5BD4F;
+    border: 1px solid #D6A243;
+}
+
+.toolbar .fullscreen {
+    background: #61C454;
+    border: 1px solid #58A942;
+}
+
+.domain {
+    width: 50%;
+    height: 26px;
+    padding: 0 10px;
+    border-radius: 6px;
+    background: #0C0F12;
+    color: #FFFFFF;
+    font-size: .9em;
+    border: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: text;
+}
+
+.tools {
+    padding-left: 10px;
+}
+
+@media (max-width: 600px) {
+    .domain {
+        width: 100%;
+        font-size: .8em;
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    padding-top: 5em;
+}
+
+.content .container {
+    width: 80%;
+}
+
+.content .container p {
+    width: 50%;
+    padding: 5em;
+}
