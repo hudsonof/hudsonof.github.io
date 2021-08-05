@@ -78,7 +78,7 @@ body {
     height: 26px;
     padding: 0 10px;
     border-radius: 6px;
-    background: #0C0F12;
+    background: ;
     color: #FFFFFF;
     font-size: .9em;
     border: none;
@@ -87,6 +87,7 @@ body {
     align-items: center;
     justify-content: space-between;
     cursor: text;
+    background: url(../images/lock.svg) no-repeat scroll 10px 7px, url(../images/refresh.svg) no-repeat scroll 99%, #0C0F12;
 }
 
 .tools {
@@ -132,8 +133,26 @@ body {
     margin: 1em 0;
 }
 
-.profile h1, .profile h3 {
+.profile h1, .profile h3, .network {
     margin-bottom: 1em;
+}
+
+.network {
+    display: flex;
+}
+
+.network a {
+    font-size: 2em;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+.network a:hover {
+    transform: translate3d(0, -6px, 30px);
+}
+
+.network a:visited {
+    color: #FFFFFF;
 }
 
 .profile-image {
@@ -150,11 +169,11 @@ body {
 }
 
 .skills ul {
-    width: 80%;
     flex-wrap: wrap;
     display: flex;
     flex-direction: row;
     list-style: none;
+    padding-left: 1em;
 }
 
 .skills ul li {
@@ -174,11 +193,16 @@ body {
     background: #212121;
 }
 
+.skills ul li:hover>i {
+    transform: translate3d(0, -6px, 30px);
+}
+
 .skills ul li i {
     display: flex;
     justify-content: center;
     flex-basis: 100%;
     font-size: 4em;
+    transition: all 0.3s ease 0s;
 }
 
 .ico-java {
